@@ -60,6 +60,49 @@
                 <div class="stat-label">Open Source</div>
             </div>
         </section>
+
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for resources...">
+                <button id="search-btn">Search</button>
+            </div>
+        </section>
+
+        <section id="collections" class="collections">
+            <h2>Our Collections</h2>
+            <div class="resource-grid" id="resource-grid">
+                <div class="resource-card" data-title="Introduction to Computer Science" data-author="John Doe" data-category="Technology">
+                    <h3>Introduction to Computer Science</h3>
+                    <p>Author: John Doe</p>
+                    <p>Category: Technology</p>
+                    <a href="#">Download</a>
+                </div>
+                <div class="resource-card" data-title="Mathematics Fundamentals" data-author="Jane Smith" data-category="Mathematics">
+                    <h3>Mathematics Fundamentals</h3>
+                    <p>Author: Jane Smith</p>
+                    <p>Category: Mathematics</p>
+                    <a href="#">Download</a>
+                </div>
+                <div class="resource-card" data-title="History of Uganda" data-author="Robert Brown" data-category="History">
+                    <h3>History of Uganda</h3>
+                    <p>Author: Robert Brown</p>
+                    <p>Category: History</p>
+                    <a href="#">Download</a>
+                </div>
+                <div class="resource-card" data-title="Biology Basics" data-author="Alice Johnson" data-category="Science">
+                    <h3>Biology Basics</h3>
+                    <p>Author: Alice Johnson</p>
+                    <p>Category: Science</p>
+                    <a href="#">Download</a>
+                </div>
+                <div class="resource-card" data-title="English Literature" data-author="Michael Davis" data-category="Literature">
+                    <h3>English Literature</h3>
+                    <p>Author: Michael Davis</p>
+                    <p>Category: Literature</p>
+                    <a href="#">Download</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Interactive Script -->
@@ -86,6 +129,27 @@
                 document.querySelector('.el-1').style.transform = `translate(${x * 30}px, ${y * 30}px)`;
                 document.querySelector('.el-2').style.transform = `translate(${x * -40}px, ${y * -40}px)`;
             });
+
+            // Search functionality
+            const searchInput = document.getElementById('search-input');
+            const resourceGrid = document.getElementById('resource-grid');
+            const resources = resourceGrid.querySelectorAll('.resource-card');
+
+            function performSearch() {
+                const query = searchInput.value.toLowerCase();
+                resources.forEach(card => {
+                    const title = card.dataset.title.toLowerCase();
+                    const author = card.dataset.author.toLowerCase();
+                    const category = card.dataset.category.toLowerCase();
+                    if (title.includes(query) || author.includes(query) || category.includes(query)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            searchInput.addEventListener('input', performSearch);
         });
     </script>
 </body>

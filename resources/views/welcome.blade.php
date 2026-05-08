@@ -24,8 +24,17 @@
             </ul>
         </nav>
         <div class="auth-buttons">
-            <a href="#" class="btn-login">Login</a>
-            <a href="#" class="btn-signup">Get Started</a>
+            @if(Auth::check())
+                <span class="text-white">Welcome, {{ Auth::user()->name }}</span>
+                <a href="{{ route('dashboard') }}" class="btn-login">Dashboard</a>
+                <form action="{{ route('logout') }}" method="POST" style="display:inline;">
+                    @csrf
+                    <button type="submit" class="btn-signup">Logout</button>
+                </form>
+            @else
+                <a href="{{ route('login') }}" class="btn-login">Login</a>
+                <a href="{{ route('register') }}" class="btn-signup">Get Started</a>
+            @endif
         </div>
     </header>
 
@@ -40,7 +49,11 @@
                 <h1>Open Knowledge for <br>Every Community</h1>
                 <p>Welcome to the BOSC Community Library. A centralized, open-source repository of educational materials tailored for public-sector and academic institutions across Uganda.</p>
                 <div class="cta-group">
-                    <a href="#browse" class="btn-primary">Browse Library</a>
+                    @if(Auth::check())
+                        <a href="{{ route('dashboard') }}" class="btn-primary">Go to Dashboard</a>
+                    @else
+                        <a href="{{ route('register') }}" class="btn-primary">Browse Library</a>
+                    @endif
                     <a href="https://github.com/ThrustSoftwares/BOSC-Community-Library" target="_blank" class="btn-secondary">Contribute on GitHub</a>
                 </div>
             </div>

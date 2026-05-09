@@ -18,22 +18,28 @@
         <a href="/" class="logo">BOSC Library</a>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#collections">Collections</a></li>
-                <li><a href="#community">Community</a></li>
+                <li><a href="#about">{{ __('About') }}</a></li>
+                <li><a href="#collections">{{ __('Collections') }}</a></li>
+                <li><a href="#community">{{ __('Community') }}</a></li>
+                <li>
+                    <select onchange="window.location.href=this.value" class="bg-transparent text-white border-none cursor-pointer outline-none ml-4" style="background: transparent; color: inherit; border: none; font-size: 1rem;">
+                        <option value="{{ route('lang.switch', 'en') }}" {{ App::getLocale() == 'en' ? 'selected' : '' }} style="color: black;">English</option>
+                        <option value="{{ route('lang.switch', 'lg') }}" {{ App::getLocale() == 'lg' ? 'selected' : '' }} style="color: black;">Luganda</option>
+                    </select>
+                </li>
             </ul>
         </nav>
         <div class="auth-buttons">
             @if(Auth::check())
-                <span class="text-white">Welcome, {{ Auth::user()->name }}</span>
-                <a href="{{ route('dashboard') }}" class="btn-login">Dashboard</a>
+                <span class="text-white">{{ __('Welcome') }}, {{ Auth::user()->name }}</span>
+                <a href="{{ route('dashboard') }}" class="btn-login">{{ __('Dashboard') }}</a>
                 <form action="{{ route('logout') }}" method="POST" style="display:inline;">
                     @csrf
-                    <button type="submit" class="btn-signup">Logout</button>
+                    <button type="submit" class="btn-signup">{{ __('Logout') }}</button>
                 </form>
             @else
-                <a href="{{ route('login') }}" class="btn-login">Login</a>
-                <a href="{{ route('register') }}" class="btn-signup">Get Started</a>
+                <a href="{{ route('login') }}" class="btn-login">{{ __('Login') }}</a>
+                <a href="{{ route('register') }}" class="btn-signup">{{ __('Get Started') }}</a>
             @endif
         </div>
     </header>
@@ -46,15 +52,15 @@
             <div class="floating-element el-3"></div>
 
             <div class="hero-content">
-                <h1>Open Knowledge for <br>Every Community</h1>
-                <p>Welcome to the BOSC Community Library. A centralized, open-source repository of educational materials tailored for public-sector and academic institutions across Uganda.</p>
+                <h1>{!! nl2br(e(__('Open Knowledge for Every Community'))) !!}</h1>
+                <p>{{ __('Welcome to the BOSC Community Library. A centralized, open-source repository of educational materials tailored for public-sector and academic institutions across Uganda.') }}</p>
                 <div class="cta-group">
                     @if(Auth::check())
-                        <a href="{{ route('dashboard') }}" class="btn-primary">Go to Dashboard</a>
+                        <a href="{{ route('dashboard') }}" class="btn-primary">{{ __('Go to Dashboard') }}</a>
                     @else
-                        <a href="{{ route('register') }}" class="btn-primary">Browse Library</a>
+                        <a href="{{ route('register') }}" class="btn-primary">{{ __('Browse Library') }}</a>
                     @endif
-                    <a href="https://github.com/ThrustSoftwares/BOSC-Community-Library" target="_blank" class="btn-secondary">Contribute on GitHub</a>
+                    <a href="https://github.com/ThrustSoftwares/BOSC-Community-Library" target="_blank" class="btn-secondary">{{ __('Contribute on GitHub') }}</a>
                 </div>
             </div>
         </section>
@@ -62,27 +68,27 @@
         <section class="stats">
             <div class="stat-card">
                 <div class="stat-number">10K+</div>
-                <div class="stat-label">Digital Resources</div>
+                <div class="stat-label">{{ __('Digital Resources') }}</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">50+</div>
-                <div class="stat-label">Partner Schools</div>
+                <div class="stat-label">{{ __('Partner Schools') }}</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">100%</div>
-                <div class="stat-label">Open Source</div>
+                <div class="stat-label">{{ __('Open Source') }}</div>
             </div>
         </section>
 
         <section class="search-section">
             <div class="search-container">
-                <input type="text" id="search-input" placeholder="Search for resources...">
-                <button id="search-btn">Search</button>
+                <input type="text" id="search-input" placeholder="{{ __('Search for resources...') }}">
+                <button id="search-btn">{{ __('Search') }}</button>
             </div>
         </section>
 
         <section id="collections" class="collections">
-            <h2>Our Collections</h2>
+            <h2>{{ __('Our Collections') }}</h2>
             <div class="resource-grid" id="resource-grid">
                 <div class="resource-card" data-title="Introduction to Computer Science" data-author="John Doe" data-category="Technology">
                     <h3>Introduction to Computer Science</h3>

@@ -8,6 +8,25 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/resources/{slug}/download', function (string $slug) {
+    $resource = config("library_resources.$slug");
+
+    abort_unless($resource, 404);
+
+    $body = implode(PHP_EOL, [
+        $resource['title'],
+        'Author: '.$resource['author'],
+        'Category: '.$resource['category'],
+        '',
+        $resource['summary'],
+    ]);
+
+    return response($body, 200, [
+        'Content-Type' => 'text/plain',
+        'Content-Disposition' => 'attachment; filename="'.$slug.'.txt"',
+    ]);
+})->name('resources.download');
+
 // Language switch route
 Route::get('lang/{locale}', function ($locale) {
     if (in_array($locale, ['en', 'lg'])) {

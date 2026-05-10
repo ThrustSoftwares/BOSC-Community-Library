@@ -79,19 +79,19 @@
         <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
             <h2 class="text-2xl font-bold text-gray-900 mb-6">Quick Actions</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <a href="#" class="p-6 border-2 border-blue-300 rounded-lg hover:bg-blue-50 transition text-center">
+                <a href="{{ route('resources.browse') }}" class="p-6 border-2 border-blue-300 rounded-lg hover:bg-blue-50 transition text-center">
                     <div class="text-4xl mb-2">🔍</div>
                     <h3 class="font-semibold text-gray-900">Browse Resources</h3>
                     <p class="text-sm text-gray-600 mt-1">Explore our library</p>
                 </a>
 
-                <a href="#" class="p-6 border-2 border-indigo-300 rounded-lg hover:bg-indigo-50 transition text-center">
+                <a href="{{ route('resources.add') }}" class="p-6 border-2 border-indigo-300 rounded-lg hover:bg-indigo-50 transition text-center">
                     <div class="text-4xl mb-2">➕</div>
                     <h3 class="font-semibold text-gray-900">Add Resource</h3>
                     <p class="text-sm text-gray-600 mt-1">Contribute content</p>
                 </a>
 
-                <a href="#" class="p-6 border-2 border-green-300 rounded-lg hover:bg-green-50 transition text-center">
+                <a href="{{ route('favorites') }}" class="p-6 border-2 border-green-300 rounded-lg hover:bg-green-50 transition text-center">
                     <div class="text-4xl mb-2">⭐</div>
                     <h3 class="font-semibold text-gray-900">My Favorites</h3>
                     <p class="text-sm text-gray-600 mt-1">Bookmarked items</p>
@@ -116,9 +116,9 @@
                     <p class="text-lg font-semibold text-gray-900">{{ Auth::user()->created_at->format('M d, Y') }}</p>
                 </div>
                 <div>
-                    <button class="px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition">
+                    <a href="{{ route('profile.edit') }}" class="inline-block px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition text-center">
                         Edit Profile
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

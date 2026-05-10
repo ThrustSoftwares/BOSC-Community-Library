@@ -90,36 +90,14 @@
         <section id="collections" class="collections">
             <h2>{{ __('Our Collections') }}</h2>
             <div class="resource-grid" id="resource-grid">
-                <div class="resource-card" data-title="Introduction to Computer Science" data-author="John Doe" data-category="Technology">
-                    <h3>Introduction to Computer Science</h3>
-                    <p>Author: John Doe</p>
-                    <p>Category: Technology</p>
-                    <a href="#">Download</a>
-                </div>
-                <div class="resource-card" data-title="Mathematics Fundamentals" data-author="Jane Smith" data-category="Mathematics">
-                    <h3>Mathematics Fundamentals</h3>
-                    <p>Author: Jane Smith</p>
-                    <p>Category: Mathematics</p>
-                    <a href="#">Download</a>
-                </div>
-                <div class="resource-card" data-title="History of Uganda" data-author="Robert Brown" data-category="History">
-                    <h3>History of Uganda</h3>
-                    <p>Author: Robert Brown</p>
-                    <p>Category: History</p>
-                    <a href="#">Download</a>
-                </div>
-                <div class="resource-card" data-title="Biology Basics" data-author="Alice Johnson" data-category="Science">
-                    <h3>Biology Basics</h3>
-                    <p>Author: Alice Johnson</p>
-                    <p>Category: Science</p>
-                    <a href="#">Download</a>
-                </div>
-                <div class="resource-card" data-title="English Literature" data-author="Michael Davis" data-category="Literature">
-                    <h3>English Literature</h3>
-                    <p>Author: Michael Davis</p>
-                    <p>Category: Literature</p>
-                    <a href="#">Download</a>
-                </div>
+                @foreach(config('library_resources') as $slug => $resource)
+                    <div class="resource-card" data-title="{{ $resource['title'] }}" data-author="{{ $resource['author'] }}" data-category="{{ $resource['category'] }}">
+                        <h3>{{ $resource['title'] }}</h3>
+                        <p>Author: {{ $resource['author'] }}</p>
+                        <p>Category: {{ $resource['category'] }}</p>
+                        <a href="{{ route('resources.download', $slug) }}">Download</a>
+                    </div>
+                @endforeach
             </div>
         </section>
     </main>

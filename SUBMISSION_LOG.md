@@ -1,6 +1,8 @@
 # Submission Log
 
 **Project:** BOSC Community Library  
+**Student Name:** MUGAMBE IVAN  
+**Registration Number:** 22/BSE/BU/R/1007  
 **Repository:** https://github.com/ThrustSoftwares/BOSC-Community-Library  
 **Submission Folder:** https://drive.google.com/drive/folders/11K2x-afyUcmtl5vQoQcWGGjDxrD-hkBP?usp=drive_link  
 **Course:** BSCT 3221 - Open Source Software  

@@ -21,4 +21,13 @@ We love new ideas! If you have a feature request (e.g., adding support for new c
 5. Link the PR to the relevant issue.
 
 ## Development Setup
-*(Technical setup instructions will be provided in a future update).*
+To run the project locally:
+
+1. Install PHP, Composer, Node.js, and npm.
+2. Run `composer install`.
+3. Run `npm install`.
+4. Copy `.env.example` to `.env`.
+5. Run `php artisan key:generate`.
+6. Run `php artisan migrate`.
+7. Start the app with `php artisan serve`.
+8. Run tests with `php artisan test`.

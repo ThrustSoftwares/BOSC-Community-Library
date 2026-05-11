@@ -80,6 +80,24 @@
             </div>
         </section>
 
+        <section id="about" class="info-section">
+            <div class="section-copy">
+                <span class="section-kicker">{{ __('About') }}</span>
+                <h2>{{ __('Built for public learning') }}</h2>
+                <p>{{ __('BOSC Community Library helps schools, universities, and community learning centers organize open educational materials with transparent software that can be audited, localized, and improved by local contributors.') }}</p>
+            </div>
+            <div class="principle-grid" aria-label="{{ __('Project principles') }}">
+                <div>
+                    <strong>{{ __('Open governance') }}</strong>
+                    <span>{{ __('GPLv3 licensing, contribution guidelines, and public issue templates keep the project accountable.') }}</span>
+                </div>
+                <div>
+                    <strong>{{ __('Local access') }}</strong>
+                    <span>{{ __('English and Luganda language support make the library easier to adapt for Ugandan institutions.') }}</span>
+                </div>
+            </div>
+        </section>
+
         <section class="search-section">
             <div class="search-container">
                 <input type="text" id="search-input" placeholder="{{ __('Search for resources...') }}">
@@ -99,6 +117,15 @@
                     </div>
                 @endforeach
             </div>
+        </section>
+
+        <section id="community" class="info-section community-section">
+            <div class="section-copy">
+                <span class="section-kicker">{{ __('Community') }}</span>
+                <h2>{{ __('Ready for collaborative maintenance') }}</h2>
+                <p>{{ __('The project includes a code of conduct, contribution guide, issue templates, and pull request checklist so new contributors can report problems, propose features, and review changes consistently.') }}</p>
+            </div>
+            <a href="https://github.com/ThrustSoftwares/BOSC-Community-Library/issues" target="_blank" class="btn-secondary">{{ __('View open issues') }}</a>
         </section>
     </main>
 
@@ -147,6 +174,7 @@
             }
 
             searchInput.addEventListener('input', performSearch);
+            document.getElementById('search-btn').addEventListener('click', performSearch);
         });
     </script>
 </body>

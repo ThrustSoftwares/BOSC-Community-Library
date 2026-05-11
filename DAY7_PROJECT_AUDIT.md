@@ -18,11 +18,11 @@ This audit records the final state of the BOSC Community Library 7-day open-sour
 
 | Issue | Type | Resolution |
 | --- | --- | --- |
-| Issue 1 | Feature | Initialized Laravel app shell and responsive public landing page. |
-| Issue 2 | Feature | Added searchable educational resource catalog. |
-| Issue 3 | Feature | Implemented registration, login, logout, and protected dashboard. |
-| Issue 4 | Refactor / Accessibility | Added English and Luganda localization support and language switching. |
-| Issue 5 | Bug fix | Repaired resource download links with real download routes and regression coverage. |
+| Issue 1 | Feature enhancement | Initialized Laravel app shell and responsive public landing page. |
+| Issue 2 | Feature enhancement | Added searchable educational resource catalog. |
+| Issue 3 | Refactoring / maintenance | Restored project README and aligned Laravel setup, project metadata, and contributor instructions. |
+| Issue 4 | Functional bug | Fixed dashboard action links so protected buttons resolve to real application routes instead of broken placeholders. |
+| Issue 5 | Functional bug | Repaired resource download links with real download routes and regression coverage. |
 
 ## Verification
 

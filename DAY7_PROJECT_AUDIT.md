@@ -1,6 +1,6 @@
-# Day 7 Exam Audit
+# Day 7 Project Audit
 
-This audit records the final state of the BOSC Community Library 7-day open-source development exam.
+This audit records the final state of the BOSC Community Library 7-day open-source development project.
 
 ## Phase Completion
 
@@ -12,7 +12,7 @@ This audit records the final state of the BOSC Community Library 7-day open-sour
 | Day 4 | Add user authentication and protected dashboard workflow. | `AuthController`, auth routes, register/login/dashboard views | Complete |
 | Day 5 | Add localization support and fix dashboard action links. | `lang/en.json`, `lang/lg.json`, `Localization` middleware, `lang/{locale}` route | Complete |
 | Day 6 | Deliver legal, sustainability, and public-sector adoption documentation. | `LEGAL_ANALYSIS.md`, `SUSTAINABILITY.md`, `GOVERNMENT_PROPOSAL.md` | Complete |
-| Day 7 | Final audit, metadata cleanup, and verification. | `DAY7_EXAM_AUDIT.md`, GPL metadata alignment, contributor setup instructions, passing tests | Complete |
+| Day 7 | Final audit, metadata cleanup, and verification. | `DAY7_PROJECT_AUDIT.md`, GPL metadata alignment, contributor setup instructions, passing tests | Complete |
 
 ## Issue Coverage
 
@@ -33,4 +33,4 @@ This audit records the final state of the BOSC Community Library 7-day open-sour
 
 ## Remaining Product Opportunities
 
-The exam requirements are complete. Future production work should replace placeholder dashboard counts with database-backed metrics, add persistent resource management, and expand localization coverage as more languages are needed.
+The project requirements are complete. Future production work should replace placeholder dashboard counts with database-backed metrics, add persistent resource management, and expand localization coverage as more languages are needed.

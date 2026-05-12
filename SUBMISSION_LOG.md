@@ -27,23 +27,33 @@ This repository includes the project source code, documentation, governance file
 | Governance reflection | `GOVERNANCE_REFLECTION.md` |
 | Final project audit | `DAY7_PROJECT_AUDIT.md` |
 
-## Requirements to Run the Project
+## Installation And Running Instructions For The Examiner
 
-The examiner should have the following installed before running the project locally:
+The project is a Laravel/PHP application. Before running it locally, the examiner should install the following software:
 
 - PHP 8.3 or newer
 - Composer
 - Node.js and npm
 - Git
 
-## How to Run the Project Locally
+The examiner can confirm the required tools are installed by running:
+
+```bash
+php -v
+composer --version
+node -v
+npm -v
+git --version
+```
+
+After installing the requirements, run the project with these commands:
 
 ```bash
 git clone https://github.com/ThrustSoftwares/BOSC-Community-Library.git
 cd BOSC-Community-Library
 composer install
 npm install
-copy .env.example .env
+cp .env.example .env
 php artisan key:generate
 php artisan migrate
 npm run build
@@ -56,11 +66,19 @@ After running `php artisan serve`, open the local URL shown in the terminal, usu
 http://127.0.0.1:8000
 ```
 
-For Windows PowerShell, `copy .env.example .env` can also be run as:
+For Windows Command Prompt, the environment file can be copied using:
+
+```cmd
+copy .env.example .env
+```
+
+For Windows PowerShell, the same step can be run as:
 
 ```powershell
 Copy-Item .env.example .env
 ```
+
+The project uses SQLite by default through `.env.example`, so no separate MySQL setup is required for a basic local review.
 
 ## GitHub Activity Evidence
 

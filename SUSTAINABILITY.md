@@ -1,7 +1,7 @@
 # Sustainability Strategy for the BOSC Community Library
 
-**Course:** BSCT 3221 - Open Source Software  
-**Project:** BOSC Community Library
+Course: BSCT 3221 - Open Source Software  
+Project: BOSC Community Library
 
 ## Purpose
 

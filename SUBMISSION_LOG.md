@@ -8,7 +8,7 @@
 **Course:** BSCT 3221 - Open Source Software  
 **Submission Date:** 12 May 2026
 
-## Examiner Guide
+## Submission Guide
 
 This repository includes the project source code, documentation, governance files, legal and sustainability analysis, and screenshot evidence for the open source software coursework submission. The screenshots are stored in the repository folder named `screenshots/` so the examiner can verify the GitHub activity, issue tracking, pull requests, testing commands, and working application features alongside the GitHub repository link above.
 
@@ -27,7 +27,7 @@ This repository includes the project source code, documentation, governance file
 | Governance reflection | `GOVERNANCE_REFLECTION.md` |
 | Final project audit | `DAY7_PROJECT_AUDIT.md` |
 
-## Installation And Running Instructions For The Examiner
+## Installation And Running Instructions 
 
 The project is a Laravel/PHP application. Before running it locally, the examiner should install the following software:
 

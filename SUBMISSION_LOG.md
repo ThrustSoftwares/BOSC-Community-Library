@@ -116,11 +116,11 @@ The screenshots below show closed issues and merged pull requests. They demonstr
 
 ### Resolved Issues
 
-![Resolved issue number 1](<screenshots/Resolved issue #1 .png>)
+![Resolved issue number 1](screenshots/resolved-issue-1.png)
 
 **Description:** Closed GitHub issue showing one of the completed project tasks and its resolution status.
 
-![Closed issue number 5](<screenshots/Closed issue  #5.png>)
+![Closed issue number 5](screenshots/closed-issue-5.png)
 
 **Description:** Closed GitHub issue showing another resolved project task, confirming issue tracking was used up to the final fixes.
 
@@ -130,7 +130,7 @@ The screenshots below show closed issues and merged pull requests. They demonstr
 
 **Description:** GitHub pull requests page showing merged pull requests used to integrate completed project work.
 
-![Merged pull request detail](<screenshots/merged pull request #3.png>)
+![Merged pull request detail](screenshots/merged-pull-request-3.png)
 
 **Description:** Detailed merged pull request evidence showing the PR status and the completed review and merge workflow.
 

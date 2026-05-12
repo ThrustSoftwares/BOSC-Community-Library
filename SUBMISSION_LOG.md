@@ -10,7 +10,7 @@
 
 ## Examiner Guide
 
-This repository includes the project source code, documentation, governance files, legal and sustainability analysis, and screenshot evidence for the open source software coursework submission. The screenshots are stored in the repository folder named `Sreenshots/` so the examiner can verify the GitHub activity, issue tracking, pull requests, testing commands, and working application features alongside the GitHub repository link above.
+This repository includes the project source code, documentation, governance files, legal and sustainability analysis, and screenshot evidence for the open source software coursework submission. The screenshots are stored in the repository folder named `screenshots/` so the examiner can verify the GitHub activity, issue tracking, pull requests, testing commands, and working application features alongside the GitHub repository link above.
 
 ## Repository Evidence
 
@@ -27,33 +27,68 @@ This repository includes the project source code, documentation, governance file
 | Governance reflection | `GOVERNANCE_REFLECTION.md` |
 | Final project audit | `DAY7_PROJECT_AUDIT.md` |
 
+## Requirements to Run the Project
+
+The examiner should have the following installed before running the project locally:
+
+- PHP 8.3 or newer
+- Composer
+- Node.js and npm
+- Git
+
+## How to Run the Project Locally
+
+```bash
+git clone https://github.com/ThrustSoftwares/BOSC-Community-Library.git
+cd BOSC-Community-Library
+composer install
+npm install
+copy .env.example .env
+php artisan key:generate
+php artisan migrate
+npm run build
+php artisan serve
+```
+
+After running `php artisan serve`, open the local URL shown in the terminal, usually:
+
+```text
+http://127.0.0.1:8000
+```
+
+For Windows PowerShell, `copy .env.example .env` can also be run as:
+
+```powershell
+Copy-Item .env.example .env
+```
+
 ## GitHub Activity Evidence
 
 The screenshots below show consistent GitHub activity across the project period, including commits made on different days, repository branches, and the GitHub profile contribution graph.
 
 ### Commit Activity
 
-![Day 1 and Day 2 commit history](Sreenshots/Day%201and%202%20commits.png)
+![Day 1 and Day 2 commit history](<screenshots/Day 1and 2 commits.png>)
 
 **Description:** Commit history showing early project setup and development work completed during Day 1 and Day 2.
 
-![Day 3, Day 4 and Day 5 commit history](Sreenshots/Day%203%2C4%20and%205%20commits.png)
+![Day 3, Day 4 and Day 5 commit history](<screenshots/Day 3,4 and 5 commits.png>)
 
 **Description:** Commit history showing continued implementation, documentation, and project improvements during Day 3, Day 4, and Day 5.
 
-![Day 6 and Day 7 commit history](Sreenshots/Day6%20and%207commits.png)
+![Day 6 and Day 7 commit history](<screenshots/Day6 and 7commits.png>)
 
 **Description:** Commit history showing final project refinements, testing, documentation updates, and submission preparation during Day 6 and Day 7.
 
 ### Branch Activity
 
-![GitHub branch activity](Sreenshots/git-activity-branches.png)
+![GitHub branch activity](<screenshots/git-activity-branches.png>)
 
 **Description:** GitHub branches used during development, showing that project work was organized through separate branches before being merged.
 
 ### GitHub Profile Contributions
 
-![GitHub profile contribution graph](Sreenshots/git-profile-contributions.png)
+![GitHub profile contribution graph](<screenshots/git-profile-contributions.png>)
 
 **Description:** GitHub profile contribution graph showing project activity during the coursework period.
 
@@ -63,21 +98,21 @@ The screenshots below show closed issues and merged pull requests. They demonstr
 
 ### Resolved Issues
 
-![Resolved issue number 1](Sreenshots/Resolved%20issue%20%231%20.png)
+![Resolved issue number 1](<screenshots/Resolved issue #1 .png>)
 
 **Description:** Closed GitHub issue showing one of the completed project tasks and its resolution status.
 
-![Closed issue number 5](Sreenshots/Closed%20issue%20%20%235.png)
+![Closed issue number 5](<screenshots/Closed issue  #5.png>)
 
 **Description:** Closed GitHub issue showing another resolved project task, confirming issue tracking was used up to the final fixes.
 
 ### Merged Pull Requests
 
-![Merged pull requests list](Sreenshots/merged%20pull%20reuests.png)
+![Merged pull requests list](<screenshots/merged pull reuests.png>)
 
 **Description:** GitHub pull requests page showing merged pull requests used to integrate completed project work.
 
-![Merged pull request detail](Sreenshots/merged%20pull%20request%20%233.png)
+![Merged pull request detail](<screenshots/merged pull request #3.png>)
 
 **Description:** Detailed merged pull request evidence showing the PR status and the completed review and merge workflow.
 
@@ -87,13 +122,13 @@ The following screenshots show that the project was tested, validated, and run s
 
 ### Test Results
 
-![Passing Laravel tests](Sreenshots/tests-passing.png)
+![Passing Laravel tests](<screenshots/tests-passing.png>)
 
 **Description:** Terminal output showing the Laravel test suite running successfully with `php artisan test`.
 
 ### Composer Validation
 
-![Composer validation output](Sreenshots/composer-validate.png)
+![Composer validation output](<screenshots/composer-validate.png>)
 
 **Description:** Terminal output showing Composer validation working successfully for the project setup.
 
@@ -103,25 +138,25 @@ The screenshots below show the working BOSC Community Library application and it
 
 ### Homepage
 
-![BOSC Community Library homepage](Sreenshots/homepage.png)
+![BOSC Community Library homepage](<screenshots/homepage.png>)
 
 **Description:** Running homepage showing the public library interface and the main project presentation.
 
 ### Search Functionality
 
-![Library search results](Sreenshots/search-results.png)
+![Library search results](<screenshots/search-results.png>)
 
 **Description:** Search functionality showing that library resources can be filtered and found through the application interface.
 
 ### Luganda Language Support
 
-![Luganda language mode](Sreenshots/language%20functionality-luganda.png)
+![Luganda language mode](<screenshots/language functionality-luganda.png>)
 
 **Description:** Library interface displayed in Luganda, showing multilingual support for local community users.
 
 ### Authenticated User Dashboard
 
-![Authenticated user dashboard](Sreenshots/dashboard.png)
+![Authenticated user dashboard](<screenshots/dashboard.png>)
 
 **Description:** Dashboard shown after user authentication, confirming that the login-protected user area is working.
 
@@ -142,9 +177,9 @@ git status --short --branch
 - [x] `GOVERNANCE_REFLECTION.md` committed for governance reflection evidence.
 - [x] GitHub issues were created and closed.
 - [x] Pull requests were merged.
-- [x] GitHub activity screenshots were saved in `Sreenshots/`.
-- [x] Resolved issue and pull request screenshots were saved in `Sreenshots/`.
-- [x] GitHub profile contribution graph screenshot was saved in `Sreenshots/`.
-- [x] Test and validation screenshots were saved in `Sreenshots/`.
-- [x] Application feature screenshots were saved in `Sreenshots/`.
+- [x] GitHub activity screenshots were saved in `screenshots/`.
+- [x] Resolved issue and pull request screenshots were saved in `screenshots/`.
+- [x] GitHub profile contribution graph screenshot was saved in `screenshots/`.
+- [x] Test and validation screenshots were saved in `screenshots/`.
+- [x] Application feature screenshots were saved in `screenshots/`.
 - [x] Final repository evidence is available through the GitHub repository link.

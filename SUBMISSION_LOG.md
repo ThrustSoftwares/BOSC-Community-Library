@@ -112,7 +112,13 @@ The screenshots below show consistent GitHub activity across the project period,
 
 ## Issue and Pull Request Evidence
 
-The screenshots below show closed issues and merged pull requests. They demonstrate that project tasks were tracked using GitHub Issues and completed through pull requests before being merged into the repository.
+The screenshots below show the GitHub issues page, closed issue threads, and merged pull requests. They demonstrate that project tasks were tracked using GitHub Issues and completed through pull requests before being merged into the repository.
+
+### Issues Overview
+
+![GitHub issues page showing open and closed issues](screenshots/github-issues-page.png)
+
+**Description:** GitHub issues page showing the project issue tracker with open and closed issues, including the coursework issue activity used to manage development tasks.
 
 ### Resolved Issues
 
@@ -194,6 +200,7 @@ git status --short --branch
 - [x] `SUBMISSION_LOG.md` prepared as a submission guide.
 - [x] `GOVERNANCE_REFLECTION.md` committed for governance reflection evidence.
 - [x] GitHub issues were created and closed.
+- [x] GitHub issues overview screenshot was saved in `screenshots/`.
 - [x] Pull requests were merged.
 - [x] GitHub activity screenshots were saved in `screenshots/`.
 - [x] Resolved issue and pull request screenshots were saved in `screenshots/`.

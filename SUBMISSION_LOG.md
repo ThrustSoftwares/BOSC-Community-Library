@@ -10,7 +10,7 @@
 
 ## Submission Guide
 
-This repository includes the project source code, documentation, governance files, legal and sustainability analysis, and screenshot evidence for the open source software coursework submission. The screenshots are stored in the repository folder named `screenshots/` so the examiner can verify the GitHub activity, issue tracking, pull requests, testing commands, and working application features alongside the GitHub repository link above.
+This repository includes the project source code, documentation, governance files, legal and sustainability analysis, and screenshot evidence for the open source software coursework submission. The screenshots are stored in the repository folder named `screenshots/` to verify the GitHub activity, issue tracking, pull requests, testing commands, and working application features alongside the GitHub repository link above.
 
 ## Repository Evidence
 
@@ -29,14 +29,14 @@ This repository includes the project source code, documentation, governance file
 
 ## Installation And Running Instructions 
 
-The project is a Laravel/PHP application. Before running it locally, the examiner should install the following software:
+The project is a Laravel/PHP application. Before running it locally, install the following software:
 
 - PHP 8.3 or newer
 - Composer
 - Node.js and npm
 - Git
 
-The examiner can confirm the required tools are installed by running:
+Confirm the required tools are installed by running:
 
 ```bash
 php -v
@@ -191,7 +191,7 @@ git status --short --branch
 ## Submission Checklist
 
 - [x] GitHub repository link added to the Google Drive submission.
-- [x] `SUBMISSION_LOG.md` prepared as an examiner guide.
+- [x] `SUBMISSION_LOG.md` prepared as a submission guide.
 - [x] `GOVERNANCE_REFLECTION.md` committed for governance reflection evidence.
 - [x] GitHub issues were created and closed.
 - [x] Pull requests were merged.

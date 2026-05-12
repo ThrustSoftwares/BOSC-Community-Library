@@ -5,41 +5,43 @@ Project: BOSC Community Library
 
 ## Purpose
 
-The BOSC Community Library cannot depend only on volunteer energy. A public-sector open source project needs reliable funding, clear governance, responsible maintenance, and a path for institutions to adopt it without becoming dependent on one private vendor. The sustainability model for this project should combine service revenue, grants, university participation, and transparent community governance.
+The BOSC Community Library should not depend only on one student, one maintainer, or short-term volunteer energy. If the project were to be used by schools or community libraries, it would need funding, documentation, support, and a clear way for new people to join. My sustainability approach is to combine service-based income, public-interest funding, and community governance.
 
 ## Red Hat Service-Based Model
 
-The Red Hat model proves that open source software can support a serious business without making the source code proprietary. In this model, the core software remains free and open, while revenue comes from professional services. For the BOSC Community Library, this could include managed hosting, installation support, school onboarding, teacher training, data migration, custom reporting, backups, and security maintenance.
+The Red Hat model shows that open source software can remain open while still supporting paid work. The software itself stays available, but income comes from services around it. For BOSC Community Library, those services could include installation, managed hosting, data backup, school onboarding, teacher training, custom reports, and security maintenance.
 
-This model is practical for Ugandan schools because many institutions may not have full-time system administrators. A school should be able to use the software freely, but also pay for a reliable hosted service if it lacks local technical capacity. This keeps the software open while creating income for maintainers.
+This model makes sense in Uganda because many schools may want a digital library but may not have a full-time system administrator. A school could use the software freely if it has technical capacity, or it could pay a service provider to host and maintain it. That keeps the project open while still creating a realistic way to support maintainers.
 
-The main advantage of this model is direct alignment between user needs and project funding. If schools need better uptime, backups, or training, the service provider earns money by improving those outcomes. The risk is that one company could become too dominant. To reduce that risk, the project should publish deployment documentation, keep data export features open, and allow multiple service providers to compete.
+The risk is that one company could become too powerful around the project. To reduce that risk, the project should keep deployment instructions public, support data export, and allow different service providers to compete.
 
 ## Foundation-Driven Model
 
-A foundation-driven model would place stewardship in a nonprofit or academic foundation rather than a single company. Funding could come from government grants, NGO support, university partnerships, donor sponsorships, and institutional memberships. This model is useful for a public education project because it emphasizes neutrality and public trust.
+A foundation-driven model would place the long-term direction of the project under a neutral body instead of one company. Funding could come from government grants, NGOs, universities, donors, and institutional members. This model fits a public education project because it builds trust and reduces fear that one vendor controls the roadmap.
 
-A BOSC Library Foundation could manage the roadmap, review major changes, organize maintainers, receive donations, and publish annual transparency reports. It could also coordinate localization, accessibility reviews, and school pilot programs. The foundation model is especially strong when the project is used by many public institutions that need confidence that no single vendor controls the future of the platform.
+A BOSC Library Foundation could manage the roadmap, coordinate maintainers, organize translation work, receive donations, publish reports, and support school pilot programs. It could also work with universities so that students contribute tested improvements as part of coursework or internship programs.
 
-The weakness of this model is that grant funding can be unstable. A foundation may also move slowly if governance becomes too bureaucratic. To avoid this, the project should use a lightweight technical steering committee, publish decision records, and maintain clear contribution rules.
+The weakness is that grants are not always stable. A foundation can also become slow if there are too many committees. To avoid that, the project would need simple governance rules, a small technical steering group, and clear decision records.
 
 ## Recommended Hybrid Approach
 
-The best strategy for the BOSC Community Library is a hybrid model. The foundation should own governance, public trust, and long-term roadmap decisions, while approved service providers generate revenue through hosting, support, and implementation services. This balances neutrality with practical funding.
+The strongest option is a hybrid approach. A foundation or community body should protect the mission, license, roadmap, and public trust. At the same time, approved service providers can earn money through hosting, support, training, and implementation. This gives the project both independence and practical funding.
 
-Recommended funding streams include:
+Possible funding streams include:
 
-- Managed hosting for schools and libraries that need reliable deployment.
-- Paid support contracts for ministries, districts, universities, and NGOs.
+- Managed hosting for schools and libraries.
+- Paid support contracts for districts, universities, ministries, and NGOs.
 - Training workshops for librarians, teachers, and ICT officers.
-- Grants for public-interest features such as Luganda localization, offline access, and accessibility.
-- GitHub Sponsors or institutional sponsorships for maintenance and security work.
-- University contribution programs where students earn academic credit for tested improvements.
+- Grants for Luganda localization, offline access, accessibility, and public-interest features.
+- Institutional sponsorships for maintenance and security work.
+- University contribution programs where students improve the project under supervision.
 
 ## Maintainer Sustainability
 
-Human sustainability is as important as money. The project should avoid depending on one maintainer. Contributors who submit several useful pull requests can be invited to triage issues. Trusted contributors can later become maintainers after peer review. Release notes, contribution guidelines, issue templates, and decision records should make it possible for new maintainers to understand the project without private explanations.
+The project also needs human sustainability. It should not depend on one person approving every issue and pull request. Contributors can start by reporting bugs, improving documentation, or fixing small issues. Those who contribute consistently can help with triage and review. Later, trusted contributors can become maintainers.
+
+Good documentation is part of sustainability too. Setup instructions, issue templates, pull request templates, release notes, and contribution rules make it easier for new contributors to understand the project without private explanations.
 
 ## Conclusion
 
-The BOSC Community Library should remain open, auditable, and reusable while still creating financial support for maintenance. A hybrid model gives the project the public trust of a foundation and the operational strength of professional services. This approach protects schools from lock-in while giving the project a realistic path to survive beyond the exam period.
+The BOSC Community Library can survive beyond the exam if it stays open, useful, and organized. A hybrid model gives it the public trust of a foundation-style structure and the practical support of paid services. This approach protects schools from vendor lock-in while giving maintainers a realistic way to keep improving the project.

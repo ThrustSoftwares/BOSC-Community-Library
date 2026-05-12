@@ -6,40 +6,42 @@
 
 ## Executive Summary
 
-The BOSC Community Library is an open source digital library platform designed to improve access to educational resources for schools, universities, and community learning centers. This proposal recommends that the Ministry of Education and Sports consider adopting the BOSC Community Library as a public-sector alternative to proprietary digital library systems.
+The BOSC Community Library is an open source digital library platform for schools, universities, and community learning centers. I propose it as a public-sector alternative to proprietary library systems because it can reduce long-term costs, avoid vendor lock-in, support local customization, and allow Ugandan languages such as Luganda to be included.
 
-The main reasons for adoption are lower total cost of ownership, reduced vendor lock-in, improved transparency, local customization, and the ability to support Ugandan languages such as Luganda.
+The project is still a coursework prototype, but it demonstrates the kind of open platform that public institutions can build on. It includes a searchable resource catalog, authentication workflow, localization support, documentation, licensing, and a contributor structure.
 
 ## Public Need
 
-Many schools need access to digital learning resources but face challenges such as high licensing fees, limited ICT budgets, unreliable vendor support, and software that is not designed for local education needs. Proprietary library systems often require annual subscription payments and may restrict how data is exported, modified, or integrated with other public systems.
+Many schools need better access to digital learning resources, but the cost of software can become a serious barrier. Proprietary systems may require annual license fees, support fees, user limits, and paid upgrades. They may also make it hard for an institution to export its data or change providers later.
 
-The BOSC Community Library responds to these challenges by giving public institutions the legal and technical freedom to inspect, modify, host, and share the software.
+BOSC Community Library takes a different approach. Because the source code is open, schools and public institutions can inspect it, host it, modify it, and share improvements. This is important for education because public money should support systems that remain useful to the public.
 
-## Total Cost of Ownership
+## Total Cost Of Ownership
 
-Total Cost of Ownership includes more than the purchase price. It includes license renewals, hosting, training, support, upgrades, data migration, customization, and exit costs. Proprietary systems may appear affordable at the beginning but become expensive when many schools require accounts, support contracts, or specialized integrations.
+Total Cost of Ownership is more than the first purchase price. It includes hosting, training, support, upgrades, data migration, customization, and exit costs. A proprietary system can look affordable at first but become expensive when many schools, users, or support contracts are added.
 
-The BOSC Community Library reduces long-term cost because there are no per-user license fees. Schools can self-host the platform, share improvements, or use a managed service provider only when they need technical support. Public funds can be directed toward local training, infrastructure, and improvements instead of repeated license payments to a closed vendor.
+With BOSC Community Library, there are no per-user license fees. A school with technical capacity can self-host it. A school without technical staff can still pay for hosting or support, but it is not locked into one vendor. Public funds can go toward local training, infrastructure, and improvements instead of repeated license payments.
 
 ## Vendor Lock-In
 
-Vendor lock-in occurs when an institution becomes dependent on one supplier because the software, data formats, or licensing terms make it difficult to change providers. This can lead to rising costs and weak bargaining power.
+Vendor lock-in happens when an institution becomes dependent on one supplier because the software, data, or contract makes it difficult to leave. This can lead to higher costs and weak bargaining power.
 
-Because the BOSC Community Library is licensed under GPLv3, the Ministry and schools retain the right to access the source code, modify it, and work with different service providers. The project should also maintain open export formats so that learning resources and user data remain portable.
+Because BOSC Community Library is licensed under GPLv3, the Ministry, schools, and service providers can access the source code and work with different technical teams. The project should also continue to support open export formats so that learning resources and user data remain portable.
 
-## Transparency and Accountability
+## Transparency And Accountability
 
-Public education software should be auditable. With open source code, technical teams can review how the system works, confirm security practices, and adapt the platform to policy requirements. This transparency supports better procurement decisions and helps build public trust.
+Public education software should be auditable. With open source code, ICT teams can review how the system works, check security practices, and adapt the platform to policy requirements. This supports better procurement decisions because the institution is not forced to trust a closed system blindly.
 
-## Local Capacity and Language Support
+## Local Capacity And Language Support
 
-The project already includes localization support, including English and Luganda language files. This makes it suitable for gradual expansion into additional local languages. Adoption would also create opportunities for Ugandan developers, students, universities, and ICT officers to contribute directly to a national education platform.
+The project already includes English and Luganda language support. This matters because education technology should not assume that every learner or community member is best served only in English. The same structure can later support other Ugandan languages.
+
+Adopting an open source approach can also help local developers, universities, and ICT officers gain practical experience. Instead of only buying finished foreign systems, institutions can build local capacity around software they are allowed to study and improve.
 
 ## Recommended Adoption Plan
 
-The Ministry can begin with a pilot program in selected schools and one university library. The pilot should evaluate usability, hosting requirements, teacher feedback, student access, and resource management workflows. After the pilot, the Ministry can publish an implementation report and invite local developers and institutions to contribute improvements.
+The Ministry could begin with a small pilot in selected schools and one university or community library. The pilot should test usability, hosting needs, teacher and librarian feedback, student access, resource management, and language support. After the pilot, the Ministry can publish findings and decide whether to expand the project or invite more contributors.
 
 ## Conclusion
 
-The BOSC Community Library offers a transparent, affordable, and locally adaptable alternative to proprietary library software. It supports public-sector accountability, reduces long-term costs, and prevents vendor lock-in. For these reasons, it is a strong candidate for Ministry-supported digital learning infrastructure.
+BOSC Community Library offers a transparent and locally adaptable option for digital library access. It can reduce long-term costs, protect institutions from vendor lock-in, and support local language needs. For those reasons, it is worth considering as a public-sector open source education platform.
